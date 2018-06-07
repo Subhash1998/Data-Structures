@@ -28,7 +28,6 @@ void add_node_mid(node *np,int item)
     else
     {
         node *save=start;
-        cout<<save->info<<endl<<save<<endl<<endd<<endl;
         while((save->info!=item)&&(save!=endd))
         {
             save=save->forw;
