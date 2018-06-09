@@ -34,7 +34,6 @@ void add_node_mid(node *np,int item)
     else
     {
         node *temp=start;
-        cout<<temp->info<<endl<<item<<endl<<endd<<endl;
         while(temp->info!=item&&temp!=endd)
         {
             temp=temp->forw;
