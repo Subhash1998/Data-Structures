@@ -25,20 +25,26 @@ void add_node_mid(node *np,int item)
     {
         start=endd=np;
     }
+    else if(start->forw==NULL)
+    {
+        np->backw=endd;
+        start->forw=np;
+        endd=np;
+    }
     else
     {
-        node *save=start;
-        cout<<save->info<<endl<<save<<endl<<endd<<endl;
-        while((save->info!=item)&&(save!=endd))
+        node *temp=start;
+        cout<<temp->info<<endl<<item<<endl<<endd<<endl;
+        while(temp->info!=item&&temp!=endd)
         {
-            save=save->forw;
+            temp=temp->forw;
         }
-        if(save->info==item)
+        if(temp->info==item)
         {
-            np->backw=save;
-            np->forw=save;
-            save->forw->backw=np;
-            save->forw=np;
+            np->forw=temp->forw;
+            np->backw=temp;
+            (temp->forw)->backw=np;
+            temp->forw=np;
         }
         else
         {
