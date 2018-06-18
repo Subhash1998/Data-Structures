@@ -57,15 +57,17 @@ int main()
     root->left->left=insert_node(5);
     root->left->right=insert_node(21);
     root->right->left=insert_node(34);
+    root->right->right=insert_node(11);
+    root->right->left->left=insert_node(54);
     root->right->left->right=insert_node(67);
     /*
                      10
                     /  \
                    24   14
-                  / \   /
-                 5   21 34
-                          \
-                          67
+                  / \   / \
+                 5   21 34 11
+                        / \
+                       54 67
     */
     do
     {
