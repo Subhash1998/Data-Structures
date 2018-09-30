@@ -8,3 +8,7 @@
 4.Binary Tree
 
 5.Binary Search Tree
+
+6.Graph
+
+7.Dynamic Programming
