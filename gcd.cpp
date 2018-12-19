@@ -3,7 +3,6 @@ using namespace std;
 
 int gcd(int a,int b)
 {
-    cout<<a<<" "<<b<<"\n";
     if(b==0)
         return a;
     return gcd(b,a%b);
