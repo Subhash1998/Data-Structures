@@ -8,11 +8,11 @@ long power(long x,long n,long p)
     x=x%p;
     while(n>0)
     {
-        //if y is odd number
+        //if n is odd number
         if(n&1)
             res=(res*x)%p;
         
-        //divide y by 2 for log2(n) approach
+        //divide n by 2 for log2(n) approach
         n=n>>1;
         x=(x*x)%p;
     }
