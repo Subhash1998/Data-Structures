@@ -10,7 +10,7 @@ void sieve(int n)
     {
         if(prime[p])
         {
-            for(i=2*p;i<=n;i+=p)
+            for(i=p*p;i<=n;i+=p)
                 prime[i]=false;
         }
     }
