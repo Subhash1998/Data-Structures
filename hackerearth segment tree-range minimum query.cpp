@@ -51,12 +51,15 @@ int query(int node,int start,int end,int l,int r,int tree[],int v[])
 {
     if(r<start || l>end)
     {
-        return 100005;
+        return 100005; //no overlap
     }
     if(l<=start && r>=end)
     {
-        return tree[node];
+        return tree[node]; //total overlap
     }
+    
+    //partial overlap
+    
     int mid=(start+end)/2;
     int p1,p2;
     p1=query(2*node,start,mid,l,r,tree,v);
