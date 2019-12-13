@@ -1,4 +1,4 @@
-//Recursive approach
+//Recursive approach (geeksforgeeks)
 
 void traverse(Node *root,int level,int* max_level)
 {
@@ -21,7 +21,7 @@ void leftView(Node *root)
 }
 
 
-//Iterative approach
+//Iterative approach (Interviewbit)
 
 vector<int> Solution::solve(TreeNode* A)
 {
